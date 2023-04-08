@@ -979,6 +979,7 @@ background: linear-gradient(180deg, rgba(35,31,32,0) 0%, rgba(35,31,32,0.6965161
 
     .OrbiAll {
         grid-column: 2/14;
+        text-align: center;
     }
 
     .OrbiAll-line1 {
@@ -986,6 +987,7 @@ background: linear-gradient(180deg, rgba(35,31,32,0) 0%, rgba(35,31,32,0.6965161
         display:flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-top:24px;
     }
 
     .OrbiAll-line1-column3 {
@@ -1031,6 +1033,7 @@ background: linear-gradient(180deg, rgba(35,31,32,0) 0%, rgba(35,31,32,0.6965161
         display:flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         margin-top:24px;
     }
 
@@ -1040,21 +1043,31 @@ background: linear-gradient(180deg, rgba(35,31,32,0) 0%, rgba(35,31,32,0.6965161
         display:flex;
         flex-direction: column;
         align-items: center;
-        
-        padding:31px 47px;
+       
+       
     }
 
     .OrbiAll-line2-column3-horoscope-sig {
         display:flex;
         flex-wrap: wrap;
         gap:20px;
-        width:330px;
+        width:360px;
+        margin-top:50px;
+    }
+
+    .OrbiAll-line2-column3-header-per {
+        display:flex;
+        align-items: center;
     }
 
     .OrbiAll-line2-column3-horoscope-signs {
         display:flex;
         flex-direction: column;
         align-items: center;
+        width: 68px;
+        height: 58px;
+        font-size: 12px;
+        
     }
 
     .OrbiAll-line2-column3-header {
@@ -1068,7 +1081,8 @@ background: linear-gradient(180deg, rgba(35,31,32,0) 0%, rgba(35,31,32,0.6965161
         display:flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: start;
+        align-items: center;
+        height: 412px;
     }
 
     .OrbiAll-line3-column1-stories1 {
@@ -1077,23 +1091,79 @@ background: linear-gradient(180deg, rgba(35,31,32,0) 0%, rgba(35,31,32,0.6965161
         flex-direction: row;
         gap:24px;
         align-items: center;
+        font-size: 16px;
+    }
+
+    .OrbiAll-line3-column1-stories1 > img {
+        width:90px;
+        height: 90px;
     }
 
     .OrbiAll-line3-column3-checkbox {
         display:flex;
         flex-direction: column;
+        gap:25px;
+    }
+
+    .OrbiAll-line3-column3-checkbox-1 {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        gap:15px;
     }
 
     .OrbiAll-line3-column3 {
         display:flex;
         flex-direction: column;
-        width:384px;
-        height: 412px;
-        padding:23px 40px;
         box-shadow: 0px 5px 7.5px 0px rgba(0,0,0,0.051);
         -webkit-box-shadow: -2px 5px 7.5px 0px rgba(0,0,0,0.051);
         -moz-box-shadow: -2px 5px 7.5px 0px rgba(0,0,0,0.051);
+        width:384;
+        height:412;
+        padding:30px;
+        gap:25px;
     }
+
+    .OrbiAll-line3-column3 > h6  {
+        color:var(--second-color);
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .OrbiAll-line3-column3 > h5  {
+        color:var(--text-color);
+        font-weight: bold;
+        font-size: 18px;
+        width:304px;
+    }
+
+    .OrbiAll-line4 {
+        grid-column: 2/14;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 412px;
+        margin-top:-40px;
+    }
+
+    #OrbiAll-buttonMore {
+        padding: 5px 10px;
+        background-color: var(--bg-color);
+        color:var(--second-color);
+        border:1px solid var(--second-color);
+        border-radius: 20px;
+        font-size: 10px;
+        width: 180px;
+        height: 40px;
+        margin-bottom: 64px;
+    }
+
+    #OrbiAll-buttonMore:hover {
+        background-color: var(--second-color);
+        color:var(--bg-color);
+    }
+
 
     footer {
         grid-column: 1/15;
