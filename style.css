@@ -9,6 +9,7 @@
     --gray-medium-color:#726F73;
     --gray-light-color:#F3F3F3;
     --gray-mediumstrong-color:#5D5D5D;
+    --footer-color:#E9E9E9;
 }
 
 * {
@@ -33,6 +34,8 @@ body {
     display:grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
     grid-column-gap:0.3fr;
+    
+    text-decoration: none;
 }
 
 a {
@@ -240,28 +243,30 @@ button {
 .news {
     grid-column: 2/14;
     margin-top:24px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .news-priority {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-column-gap:24px;
+    display:flex;
+    gap:24px;
 }
 
 .news-first {
     background: url(./assets/section/1.png);
     width:792px;
     height: 412px;
-    grid-column: 1/9;
+    
     position: relative;
-    background-size:auto;
+    
 }
 
 .news-second {
     background: url(./assets/section/2.png);
     width:492px;
     height: 412px;
-    grid-column: 9/13;
+    
     position: relative;
 }
 
@@ -579,7 +584,6 @@ background: linear-gradient(180deg, rgba(35,31,32,0) 0%, rgba(35,31,32,0.6965161
     grid-column: 2/14;
 }
 .orbi-general-read {
-    
     margin-top:24px;
     padding:33px;
     box-shadow: 0px 5px 7.5px 0px rgba(0,0,0,0.051);
@@ -591,8 +595,8 @@ background: linear-gradient(180deg, rgba(35,31,32,0) 0%, rgba(35,31,32,0.6965161
     display:flex;
     flex-direction: row;
     margin-top: 27px;
-    gap:23px;
-    justify-content: space-between;
+    gap:24px;
+    justify-content: center;
 }
 
 
@@ -807,7 +811,6 @@ background: linear-gradient(180deg, rgba(35,31,32,0) 0%, rgba(35,31,32,0.6965161
     }
 
     .orbi-general-horoscope {
-        width:1200px;
         height: 194px;
         margin-top:28px;
         display:flex;
@@ -817,12 +820,14 @@ background: linear-gradient(180deg, rgba(35,31,32,0) 0%, rgba(35,31,32,0.6965161
         box-shadow: 0px 5px 7.5px 0px rgba(0,0,0,0.051);
         -webkit-box-shadow: -2px 5px 7.5px 0px rgba(0,0,0,0.051);
         -moz-box-shadow: -2px 5px 7.5px 0px rgba(0,0,0,0.051);
+        padding:28px 34px;
     }
 
     .orbi-general-horoscope-header {
         display:flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        gap:875px;
         align-items: center;
     }
 
@@ -831,22 +836,37 @@ background: linear-gradient(180deg, rgba(35,31,32,0) 0%, rgba(35,31,32,0.6965161
         margin-top:44px;
         display:flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        gap:42px;
     }
 
-    
+    .horoscope-signs {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .orbi-general-culture {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     .orbi-general-culture-columns {
+        
         display:flex;
         flex-direction: row;
         gap:24px;
-        align-items: start;
+        align-items: center;
     }
 
     .orbi-general-culture-columns-1 {
+
         display:flex;
         flex-direction: row;
         gap:24px;
-        align-items: start;
+        align-items: center;
     }
 
     .orbi-general-culture-columns-1-1 {
@@ -863,9 +883,242 @@ background: linear-gradient(180deg, rgba(35,31,32,0) 0%, rgba(35,31,32,0.6965161
     .orbi-general-culture > .orbi-general-columns1-line1 {
         margin-top:24px;
         margin-bottom:44px;
+        margin-right: 1150px;
     }
 
     .orbi-general-culture-columns-2 {
         width: 384px;
         height: 303px;
+    }
+
+    .videos {
+        grid-column: 1/15;
+        display:grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    grid-column-gap:24px;
+    background-color: var(--second-color);
+    color:var(--bg-color);
+    padding:24px;
+    }
+
+    .videos-header {
+        grid-column: 2/14;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .videos-header ul {
+        display:flex;
+        flex-direction: row;
+        gap:63px;
+        font-size: 13px;
+        flex-wrap: nowrap;
+        list-style: none;
+    }
+
+    .videos-header-orbi {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        gap:15px;
+    }
+
+    .videos-players {
+        grid-column: 2/14;
+        display:flex;
+        justify-content: space-between;
+        margin-top:24px;
+    }
+
+    .videos-players-first {
+        background:url('./assets/OrbiVideos/photo.png');
+        width:628px;
+        height: 371px;
+    }
+
+    .videos-players-seconds-1 {
+        background:url('./assets/OrbiVideos/miniplayers/1.png');
+        width:262px;
+        height: 142px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .videos-players-seconds-2 {
+        background:url('./assets/OrbiVideos/miniplayers/2.png');
+        width:262px;
+        height: 142px;
+    }
+
+    .videos-players-seconds-3 {
+        background:url('./assets/OrbiVideos/miniplayers/3.png');
+        width:262px;
+        height: 142px;
+    }
+
+    .videos-players-seconds-4 {
+        background:url('./assets/OrbiVideos/miniplayers/4.png');
+        width:262px;
+        height: 142px;
+    }
+
+    .videos-players-seconds {
+        display:flex;
+        flex-direction: row;
+    }
+
+    .videos-players {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .OrbiAll {
+        grid-column: 2/14;
+    }
+
+    .OrbiAll-line1 {
+        grid-column: 2/14;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .OrbiAll-line1-column3 {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width:486px;
+        height: 303px;
+    }
+
+    .OrbiAll-line1-column3-results {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #OrbiAll-Groups {
+        display:flex;
+        flex-direction: row;
+    }
+
+    .OrbiAll-line1-column3 > img {
+        width:113px;
+        height: 90px;
+        margin: 20px 0px;    
+    }
+
+    .OrbiAll-line2-column1-name {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        gap:23px;
+    }
+
+    .OrbiAll-line2-column1-name-autor {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .OrbiAll-line2 {
+        grid-column: 2/14;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top:24px;
+    }
+
+    .OrbiAll-line2-column3-horoscope {
+        width:384px;
+        height: 412px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        
+        padding:31px 47px;
+    }
+
+    .OrbiAll-line2-column3-horoscope-sig {
+        display:flex;
+        flex-wrap: wrap;
+        gap:20px;
+        width:330px;
+    }
+
+    .OrbiAll-line2-column3-horoscope-signs {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .OrbiAll-line2-column3-header {
+        display:flex;
+        flex-direction: column;
+        gap:27px;
+    }
+
+    .OrbiAll-line3 {
+        grid-column: 2/14;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .OrbiAll-line3-column1-stories1 {
+        margin-top:15px;
+        display:flex;
+        flex-direction: row;
+        gap:24px;
+        align-items: center;
+    }
+
+    .OrbiAll-line3-column3-checkbox {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .OrbiAll-line3-column3 {
+        display:flex;
+        flex-direction: column;
+        width:384px;
+        height: 412px;
+        padding:23px 40px;
+        box-shadow: 0px 5px 7.5px 0px rgba(0,0,0,0.051);
+        -webkit-box-shadow: -2px 5px 7.5px 0px rgba(0,0,0,0.051);
+        -moz-box-shadow: -2px 5px 7.5px 0px rgba(0,0,0,0.051);
+    }
+
+    footer {
+        grid-column: 1/15;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:46px;
+        height: 388px;
+        background-color: var(--footer-color);
+        font-size: 13px;
+    }
+
+    .footer-socials {
+        list-style: none;
+        text-decoration: none;
+        display:flex;
+        flex-direction: row;
+        gap:11px;
+    }
+
+    .footer-options {
+        list-style: none;
+        text-decoration: none;
+        display:flex;
+        flex-direction: row;
+        gap:57px;
     }
